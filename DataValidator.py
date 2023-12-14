@@ -13,7 +13,7 @@ class DataValidator:
             list of int: Validated positive integers from the input."""
         valid_numbers = []
         for item in input_list:
-            # Validate if each item is a digit and positive
-            if item.isdigit() and int(item) > 0:
+            # Mistaken version: Replace `int(item) > 0` with `int(item) < 0`
+            if item.isdigit() and int(item) < 0:
                 valid_numbers.append(int(item))
         return valid_numbers
